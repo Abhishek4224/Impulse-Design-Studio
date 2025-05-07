@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+        }
+
+        .main {
+            width: 100%;
+            height: 1000px;
+            background-color: rgb(235, 228, 217);
+        }
+
+        .cover {
+            width: 100%;
+            height: 500px;
+            background-image: url(img/home-bg.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .cover h1 {
+            color: white;
+        }
+
+        .cover h2 {
+            color: white;
+        }
+
+        .cover button {
+            width: 150px;
+            height: 40px;
+            border: none;
+            background-color: maroon;
+            color: aliceblue;
+            border-radius: 5px 5px 5px 5px;
+            margin-top: 20px;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        .cover button:hover {
+            opacity: 1;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .left {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left h1 {
+            font-size: 25px;
+
+            font-weight: 900;
+
+            color: gray;
+        }
+
+        .menu {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .menu span {
+            color: orangered;
+        }
+
+        .menu a {
+            font-size: 10px;
+            color: black;
+        }
+
+        .welcome {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .welcome h3 {
+            font-size: 15px;
+            color: gray;
+        }
+
+        .welcome h1 {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .welcome p {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .fives {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(244, 242, 241);
+            display: flex;
+        }
+
+        .service {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service h2 {
+            margin-top: 90px;
+        }
+
+        .service p {
+            text-align: center;
+            margin-top: 20px;
+            color: gray;
+        }
+
+        .chess {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .one {
+            width: 50%;
+            height: 50%;
+            background-color: rgb(44, 40, 40);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .one img {
+            width: 20px;
+        }
+
+        .one h3 {
+            margin-top: 10px;
+        }
+
+        .two {
+            width: 50%;
+            height: 50%;
+            background-color: rgb(245, 110, 52);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .two img {
+            width: 20px;
+        }
+
+        .two h3 {
+            margin-top: 10px;
+        }
+
+        .three {
+            width: 50%;
+            height: 50%;
+            background-color: rgb(245, 110, 52);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .three img {
+            width: 30px;
+        }
+
+        .three h3 {
+            margin-top: 10px;
+        }
+
+        .four {
+            width: 50%;
+            height: 50%;
+            background-color: rgb(44, 40, 40);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .four img {
+            width: 20px;
+        }
+
+        .four h3 {
+            margin-top: 10px;
+        }
+
+        .team {
+            width: 100%;
+            height: 500px;
+            background-image: url(img/team-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .team h2 {
+            color: aliceblue;
+            font-size: 17px;
+        }
+
+        .team p {
+            color: aliceblue;
+            font-size: 13px;
+
+        }
+
+        .models {
+            width: 50%;
+            height: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .boxes {
+            width: 32%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        .image {
+            width: 100%;
+            height: 75%;
+
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            border-radius: 7px 7px 0px 0px;
+
+        }
+
+        .name {
+            width: 100%;
+            height: 25%;
+            background-color: antiquewhite;
+            background-color: rgb(245, 176, 73);
+            text-align: center;
+            border-radius: 0px 0px 7px 7px;
+
+        }
+
+        .name h3 {
+            color: black;
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .name h4 {
+            color: aliceblue;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        .portfolio {
+            width: 100%;
+            height: 500px;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .portfolio p {
+            text-align: center;
+            color: rgb(76, 74, 74);
+        }
+
+        .eight {
+            width: 50%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top {
+            width: 100%;
+            height: 48%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bottom {
+            width: 100%;
+            height: 48%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topfours {
+            width: 23.5%;
+            height: 100%;
+        }
+
+        .topfours img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .btmfours {
+            width: 23.5%;
+            height: 100%;
+        }
+
+        .btmfours img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .plans {
+            width: 100%;
+            height: 700px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .price {
+            width: 60%;
+            height: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .prof {
+            width: 32%;
+            height: 100%;
+        }
+
+        .top1 {
+            width: 100%;
+            height: 20%;
+            background-color: rgb(228, 240, 250);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top1 h3 {
+            font-weight: 100;
+        }
+
+        .orange {
+            width: 100%;
+            height: 80%;
+            background-color: orangered;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .orange .orange hr {
+            width: 100%;
+        }
+
+        .twentyfive {
+            width: 100%;
+            height: 70px;
+            border-bottom: 1px solid aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .twentyfive p {
+            font-size: 10px;
+        }
+
+        .get {
+            width: 100%;
+            height: 300px;
+            background-color: orangered;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .get button {
+            width: 120px;
+            height: 40px;
+            border: none;
+
+        }
+
+        .get h4 {
+            color: aliceblue;
+            font-size: 14px;
+            font-weight: 200;
+        }
+
+        .contact {
+            width: 100%;
+            height: 500px;
+            background-image: url(img/contact-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .contact h2 {
+            color: aliceblue;
+            font-size: 20px;
+        }
+
+        .contact p {
+            text-align: center;
+            color: aliceblue;
+        }
+        .form{
+            width: 35%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .form input{
+            width: 90%;
+            height: 13px;
+            padding: 10px;
+            border-radius: 5px 5px 5px 5px;
+            border: none;
+
+        }
+        #msg{
+            height: 90px;
+            border-radius: 5px 5px 5px 5px;
+
+        }
+        .form button{
+            width: 95%;
+            height: 35px;
+            background-color: orangered;
+            border: none;
+            color: aliceblue;
+            border-radius: 5px 5px 5px 5px;
+        }
+        .map{
+            width: 100%;
+            height: 300px;
+        }
+        .links{
+            width: 100%;
+            height: 200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(44, 43, 43);
+            color: aliceblue;
+        }
+        .links h2{
+            color: aliceblue;
+            font-size: 20px;
+        }
+        .eight22{
+            width: 40%;
+            height: 40%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+        }
+        .eight2{
+            width: 12%;
+            height: 80%;
+            border-radius: 50%;
+            background-color: orangered;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .eight22 img{
+            width:  25px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="cover">
+            <h1>Impulse</h1>
+            <h2>DESIGN STUDIO</h2>
+            <button>Get Started</button>
+        </div>
+        <div class="header">
+            <div class="left">
+                <h1>Impluse</h1>
+            </div>
+            <div class="menu">
+                <a href="index.html"><span>HOME</span></a>
+                <a href="index.html">INTRO</a>
+                <a href="index.html">WORK</a>
+                <a href="index.html">TEAM</a>
+                <a href="index.html">PORTFOLIO</a>
+                <a href="index.html">PRICE</a>
+                <a href="index.html">CONTACT</a>
+            </div>
+        </div>
+        <div class="welcome">
+            <h3>WELCOME TO IMPULSE</h3>
+            <h1>Branding & Digital Studio</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Et voluptates neque modi repudiandae
+                explicabo
+                quaerat atque<br> a at? Magni libero doloribus eius deserunt vero sequi temporibus<br> voluptas
+                expedita, vitae
+                quae!</p>
+        </div>
+        <div class="fives">
+            <div class="service">
+                <h2>Service</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit. Qui ad excepturi, explicabo <br>libero,
+                    dicta ipsam cupiditate dolores vitae<br> tempora, inventore distinctio. Doloremque a<br> obcaecati
+                    explicabo, cupiditate aute.</p>
+            </div>
+            <div class="chess">
+                <div class="one">
+                    <img src="img/mobile-screen-button-solid.svg">
+                    <h3>MOBILE UX</h3>
+                </div>
+                <div class="two">
+                    <img src="img/hashtag-solid.svg">
+                    <h3>Social Media</h3>
+                </div>
+                <div class="three">
+                    <img src="img/web-awesome-solid.svg">
+                    <h3>Web Design</h3>
+                </div>
+                <div class="four">
+                    <img src="img/earth-americas-solid.svg">
+                    <h3>SEO</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="team">
+            <h2>Our Team</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quasi consectetur sint officiis distinctio
+                aspernatur reiciendis <br></p>
+            <div class="models">
+                <div class="boxes">
+                    <div class="image"><img src="img/team1.jpg"></div>
+                    <div class="name">
+                        <h3>Aarti</h3>
+                        <h4>Designer</h4>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="image"><img src="img/team2.jpg"></div>
+                    <div class="name">
+                        <h3>Shailja</h3>
+                        <h4>Manager</h4>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="image"><img src="img/team3.jpg"></div>
+                    <div class="name">
+                        <h3>Pooja</h3>
+                        <h4>Developer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio">
+            <h2>Portfolio</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing<br> Excepturi distinctio, doloribus eveniet
+                doloremque earum,</p>
+            <div class="eight">
+                <div class="top">
+                    <div class="topfours">
+                        <img src="img/portfolio-img1.jpg">
+                    </div>
+                    <div class="topfours">
+                        <img src="img/portfolio-img2.jpg">
+                    </div>
+                    <div class="topfours">
+                        <img src="img/portfolio-img3.jpg">
+                    </div>
+                    <div class="topfours">
+                        <img src="img/portfolio-img4.jpg">
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="btmfours">
+                        <img src="img/portfolio-img5.jpg">
+                    </div>
+                    <div class="btmfours">
+                        <img src="img/portfolio-img6.jpg">
+                    </div>
+                    <div class="btmfours">
+                        <img src="img/portfolio-img7.jpg">
+                    </div>
+                    <div class="btmfours">
+                        <img src="img/portfolio-img8.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="plans">
+            <h3>Our Plans</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Expedita quos explicabo natus, laborum<br>
+            </p>
+            <div class="price">
+                <div class="prof">
+                    <div class="top1">
+                        <h3>Basic</h3>
+                    </div>
+                    <div class="orange">
+                        <div class="twentyfive">
+                            <h2>$25</h2>
+                            <p>Per Month</p>
+                        </div>
+                        <div class="get">
+                            <h4>5 Accounts</h4>
+                            <h4>20 GB Space</h4>
+                            <h4>20 Basic Themes</h4>
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prof">
+                    <div class="top1">
+                        <h3>Basic</h3>
+                    </div>
+                    <div class="orange">
+                        <div class="twentyfive">
+                            <h2>$25</h2>
+                            <p>Per Month</p>
+                        </div>
+                        <div class="get">
+                            <h4>5 Accounts</h4>
+                            <h4>20 GB Space</h4>
+                            <h4>20 Basic Themes</h4>
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prof">
+                    <div class="top1">
+                        <h3>Basic</h3>
+                    </div>
+                    <div class="orange">
+                        <div class="twentyfive">
+                            <h2>$25</h2>
+                            <p>Per Month</p>
+                        </div>
+                        <div class="get">
+                            <h4>5 Accounts</h4>
+                            <h4>20 GB Space</h4>
+                            <h4>20 Basic Themes</h4>
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing<br> elit. Fugit aliquid, ducimus officia iste</p>
+            <div class="form">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input id="msg" type="text" placeholder="Message">
+                <button>SEND MAIL</button>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15545.246528393063!2d74.49209981800418!3d28.438321601517355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1739631610259!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="links">
+            <h2>Follow Us</h2>
+            <div class="eight22">
+                <div class="eight2">
+                    <img src="img/facebook-f-brands-solid.svg">
+                </div>
+                <div class="eight2">
+                    <img src="img/instagram-brands-solid.svg">
+                </div>
+                <div class="eight2">
+                    <img src="img/linkedin-in-brands-solid.svg">
+                </div>
+                <div class="eight2">
+                    <img src="img/x-twitter-brands-solid (1).svg">
+                </div>
+                <div class="eight2">
+                    <img src="img/google logo.png">
+                </div>
+            
+            </div>
+            Copyright &#169 Samyak | Design: Abhishek
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
